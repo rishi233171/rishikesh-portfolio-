@@ -1,78 +1,170 @@
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div className="portfolio-container">
-          <div className="hero-section">
-            <h1 className="name-title">Rishikesh Mohapatra</h1>
-            <h2 className="job-title">Lead Supply Chain Data Analyst</h2>
-            <p className="tagline">15+ Years of Data Analytics Excellence</p>
-          </div>
-          
-          <div className="metrics-grid">
-            <div className="metric-card">
-              <h3>15+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div className="metric-card">
-              <h3>$5M+</h3>
-              <p>Cost Savings</p>
-            </div>
-            <div className="metric-card">
-              <h3>99.9%</h3>
-              <p>Accuracy Rate</p>
-            </div>
-            <div className="metric-card">
-              <h3>500+</h3>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div className="skills-section">
-            <h3>Technical Expertise</h3>
-            <div className="skills-grid">
-              <span className="skill-tag">Power BI (95%)</span>
-              <span className="skill-tag">SQL (90%)</span>
-              <span className="skill-tag">Python (85%)</span>
-              <span className="skill-tag">Tableau (92%)</span>
-              <span className="skill-tag">Excel/VBA (98%)</span>
-              <span className="skill-tag">Process Automation (93%)</span>
-            </div>
-          </div>
-
-          <div className="achievements-section">
-            <h3>Key Achievements</h3>
-            <div className="achievement-grid">
-              <div className="achievement-card">
-                <h4>Process Automation</h4>
-                <p>Automated Monthly SRM Pack across 15+ countries, eliminating 240+ manual hours annually</p>
-              </div>
-              <div className="achievement-card">
-                <h4>Cost Optimization</h4>
-                <p>Implemented USD Pay Cycle Optimization achieving $25K annual savings</p>
-              </div>
-              <div className="achievement-card">
-                <h4>Dashboard Excellence</h4>
-                <p>Created Production Dashboards increasing operational visibility by 90%</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="contact-section">
-            <h3>Get In Touch</h3>
-            <div className="contact-info">
-              <p>📧 rishi233171@gmail.com</p>
-              <p>📱 +91-7483532369</p>
-              <p>📍 Bhubaneswar, Odisha</p>
-              <p>🔗 LinkedIn: linkedin.com/in/rishikesh-mohapatra</p>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-  );
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-export default App;
+.App-header {
+  padding: 40px 20px;
+  color: white;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  margin-bottom: 60px;
+}
+
+.name-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.job-title {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  color: #e3f2fd;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-10px);
+}
+
+.metric-card h3 {
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+  color: #81c784;
+}
+
+.metric-card p {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.skills-section, .achievements-section, .contact-section {
+  margin-bottom: 60px;
+}
+
+.skills-section h3, .achievements-section h3, .contact-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #e1f5fe;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skill-tag {
+  background: rgba(33, 150, 243, 0.2);
+  border: 2px solid #2196f3;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: #e3f2fd;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(33, 150, 243, 0.4);
+  transform: scale(1.05);
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.achievement-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-card h4 {
+  font-size: 1.4rem;
+  margin: 0 0 15px 0;
+  color: #ffb74d;
+}
+
+.achievement-card p {
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.contact-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .name-title {
+    font-size: 2.5rem;
+  }
+  
+  .job-title {
+    font-size: 1.5rem;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+}
